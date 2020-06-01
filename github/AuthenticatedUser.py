@@ -1006,7 +1006,9 @@ class AuthenticatedUser(github.GithubObject.CompletableGithubObject):
             github.Organization.Organization, self._requester, "/user/orgs", None
         )
 
-    def get_repo(self, name):
+
+x
+   def get_repo(self, name):
         """
         :calls: `GET /repos/:owner/:repo <http://developer.github.com/v3/repos>`_
         :param name: string

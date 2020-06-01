@@ -335,7 +335,9 @@ class Team(github.GithubObject.CompletableGithubObject):
             url_parameters,
         )
 
-    def get_repos(self):
+
+x
+   def get_repos(self):
         """
         :calls: `GET /teams/:id/repos <http://developer.github.com/v3/orgs/teams>`_
         :rtype: :class:`github.PaginatedList.PaginatedList` of :class:`github.Repository.Repository`

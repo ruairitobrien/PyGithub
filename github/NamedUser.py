@@ -73,9 +73,9 @@ class NamedUser(github.GithubObject.CompletableGithubObject):
 
     def __eq__(self, other):
         return (
-            isinstance(other, type(self))
-            and self.login == other.login
-            and self.id == other.id
+            isinstance(other, type(self)) and
+            self.login == other.login and
+            self.id == other.id
         )
 
     @property
@@ -543,7 +543,9 @@ class NamedUser(github.GithubObject.CompletableGithubObject):
             self._requester, headers, data, completed=True
         )
 
-    def get_repos(
+
+x
+   def get_repos(
         self,
         type=github.GithubObject.NotSet,
         sort=github.GithubObject.NotSet,
